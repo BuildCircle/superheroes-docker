@@ -1,0 +1,19 @@
+{
+  "name": "superheroes-docker",
+  "version": "1.0.0",
+  "description": "Build Circle superheroes docker tech test",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuildCircle/superheroes-docker.git"
+  },
+  "author": "Build Circle Ltd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BuildCircle/superheroes-docker/issues"
+  },
+  "homepage": "https://github.com/BuildCircle/superheroes-docker#readme"
+}

@@ -4,11 +4,15 @@ This repository contains a node HTTP API that returns a list of superhero and su
 
 Our aim is to host this API locally using docker.
 
-## Task
+## Tips
 
-Note: This tech test is deliberately loose. We're looking for your opinions and ability to be productive without everything being immediately obvious. Googling stuff you don't know is encouraged!
+This tech test is deliberately loose. We're looking for your opinions and ability to be productive without everything being immediately obvious. 
 
-Above all, Build Circle value simplicity.
+Googling stuff is encouraged if you need it.
+
+Above all, Build Circle values simplicity.
+
+## Tasks
 
 1. Pull the repository and familiarise yourself with it.
 

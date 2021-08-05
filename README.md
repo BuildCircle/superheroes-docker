@@ -8,14 +8,12 @@ The characters and their stats are stored in a json file stored in AWS S3 - http
 
 ## Task
 
-Note: This tech test is deliberately loose. We're looking for your opinions and coding style.
+Note: This tech test is deliberately loose. We're looking for your opinions and ability to be productive without everything being immediately obvious. Googling stuff you don't know is encouraged!
 
-Above all, Build Circle value clear, well tested code.
+Above all, Build Circle value simplicity.
 
-1. Familiarise yourself with the code. Feel free to point out any issues or opinions you have about it. No right answers here but hopefully will drive good discussion.
+1. Pull the repository and familiarise yourself with it.
 
-2. Currently the `getCharacters` function is mocked in our tests. The real implementation throws an error. Make this function work by loading and parsing the characters from a JSON document in S3 here https://s3.eu-west-2.amazonaws.com/build-circle/characters.json (bonus points for a decent test for this).
+2. We want to build and deploy a docker container that hosts the application. Write a script so that we can do this with a single command.
 
-3. Edge cases. Only the happy path is covered. Lets think about what could go wrong and write some code to handle it.
-
-4. Each hero usually has a nemesis. This is captured in the `weakness` field in the JSON. If a hero is fighting a villain that matches the villain in their `weakness` field their score is weakened by 1 point. Lets write some code to handle this.
+3. Test that the server is running with `curl` command

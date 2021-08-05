@@ -1,5 +1,5 @@
-var http = require('http');
-var https = require('https');
+const http = require('http');
+const fetch = require('node-fetch');
 
 const host = 'localhost';
 const port = 8000;
@@ -7,8 +7,11 @@ const port = 8000;
 const server = http.createServer();
 server.on('request', async (req, res) => {
     try {
+        const characterResponse = await fetch('https://s3.eu-west-2.amazonaws.com/build-circle/characters.json');
+        const responseBody = await characterResponse.text();
+
         res.writeHead(200);
-        res.end('Hello world');
+        res.end(responseBody);
     }
     catch (e) {
         res.writeHead(500);

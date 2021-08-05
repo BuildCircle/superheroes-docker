@@ -6,14 +6,14 @@
   "scripts": {
     "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BuildCircle/superheroes-docker.git"
-  },
+  "repository": "git+https://github.com/BuildCircle/superheroes-docker.git",
   "author": "Build Circle Ltd",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/BuildCircle/superheroes-docker/issues"
   },
-  "homepage": "https://github.com/BuildCircle/superheroes-docker#readme"
+  "homepage": "https://github.com/BuildCircle/superheroes-docker#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
 }

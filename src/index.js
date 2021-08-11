@@ -2,7 +2,7 @@ const http = require('http');
 const fetch = require('node-fetch');
 
 const host = '0.0.0.0';
-const port = 8000;
+const port = 80;
 
 const server = http.createServer();
 server.on('request', async (req, res) => {

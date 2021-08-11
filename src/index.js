@@ -1,7 +1,7 @@
 const http = require('http');
 const fetch = require('node-fetch');
 
-const host = 'localhost';
+const host = '0.0.0.0';
 const port = 8000;
 
 const server = http.createServer();
@@ -24,4 +24,12 @@ server.on('error', () => {
 
 server.listen(port, host, () => {
     console.log(`Server is running on http://${host}:${port}`);
+});
+
+process.on('SIGTERM', () => {
+    console.info('SIGTERM signal received.');
+    console.log('Closing http server.');
+    server.close(() => {
+        console.log('Http server closed.');
+    });
 });
